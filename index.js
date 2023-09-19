@@ -8,8 +8,8 @@ app.get("/", (req, res) => {
 });
 
 app.post("/complete-delivery/", (req, res) => {
-  const { deliveryId, dateTime } = req.body;
-  const message = `Delivery ${deliveryId} is set to complete at ${dateTime}`;
+  const { deliveryId, completedAt } = req.body;
+  const message = `Delivery ${deliveryId} is set to complete at ${completedAt}`;
   console.log(message);
   res.json({ data: { input: req.body, message } });
 });
