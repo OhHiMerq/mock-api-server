@@ -2,12 +2,12 @@
 
 ## run server
 ```
-npx nodemon index.js
+npm run start
 ```
 
 ## run local tunnel
 ```
-lt --port 4000
+npm run expose
 ```
 copy created url
 
